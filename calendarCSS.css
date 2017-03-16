@@ -1,0 +1,67 @@
+#mainnav {
+  height: 100px !important;
+}
+.gb_1b {
+  padding-top: 10px;
+}
+.applogo {
+  display: none;
+}
+.gb_3b .gb_5b,
+#app-logo {
+  display: inline-block;
+}
+#app-logo {
+  background-position-y: -2719px;
+  width: 34px;
+  background-size: 60px 1500px;
+  margin-left: 5px;
+}
+.ep.flair {
+  padding-top: 110px;
+}
+#mainnav {
+  background: transparent;
+}
+#vr-nav,
+#ep-bgimg {
+  background-size: cover;
+  background-position-y: 50%;
+}
+.lv-row .lv-zippy,
+.lv-row .lv-time {
+  display: none;
+}
+.bubblemain,
+.lv-row .lv-event-title-line {
+  background-size: cover;
+}
+.lv-row .lv-event-title-line {
+  width: 350px;
+  padding: 7px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+.lv-row .lv-event-title-line.flair {
+  min-height: 100px;
+}
+.lv-row .lv-event-title-line span:last-child {
+  display: block;
+}
+.lv-row .lv-event-title-line * {
+  color: #fff !important;
+}
+.bubblemain.flair .neb-root .neb-header .neb-date *,
+.bubblemain.flair .neb-root .neb-data *,
+.bubblemain.flair .hin-bubble .title-text,
+.bubblemain.flair .hin-bubble .datetime-container * {
+  color: #fff !important;
+}
+#ep-bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  z-index: -1;
+}
