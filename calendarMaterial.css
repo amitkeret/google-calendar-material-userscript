@@ -39,6 +39,8 @@
   width: 350px;
   padding: 7px;
   margin-bottom: 5px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
   border-radius: 3px;
 }
 .lv-row .lv-event-title-line.flair {

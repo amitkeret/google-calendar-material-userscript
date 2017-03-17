@@ -67,7 +67,7 @@
                 if (event.dataset.styled) return;
                 let eventTitle = event.querySelector('.lv-event-title-line');
                 eventTitle.style.backgroundColor = eventTitle.querySelector('span').style.color;
-                eventTitle.style.borderBottom = '2px solid ' + eventTitle.style.backgroundColor;
+                eventTitle.style.borderBottomColor = eventTitle.style.backgroundColor;
                 let eventTime = event.querySelector('.lv-event-time').innerText;
                 if (eventTime.toLowerCase() !== 'all day') {
                     let span2 = document.createElement('span');
