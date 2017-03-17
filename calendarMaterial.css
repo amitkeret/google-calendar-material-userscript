@@ -23,18 +23,16 @@
 #mainnav {
   background: transparent;
 }
-#vr-nav,
-#ep-bgimg {
-  background-size: cover;
-  background-position-y: 50%;
-}
 .lv-row .lv-zippy,
 .lv-row .lv-time {
   display: none;
 }
 .bubblemain,
-.lv-row .lv-event-title-line {
+.lv-row .lv-event-title-line,
+#vr-nav,
+#ep-bgimg {
   background-size: cover;
+  background-position: center center;
 }
 .lv-row .lv-event-title-line {
   width: 350px;
