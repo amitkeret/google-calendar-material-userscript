@@ -85,3 +85,9 @@
   border: 1px solid #ccc;
   z-index: -1;
 }
+.bubble.has-top-prong .bubblemain.flair {
+  margin-top: 140px;
+}
+.bubble.has-top-prong .bubblemain.flair .top-prong {
+  top: -149px;
+}
