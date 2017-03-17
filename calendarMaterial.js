@@ -104,7 +104,10 @@
         setTimeout(function() {
             var bubbleEvent = document.querySelector('.bubblemain');
             if (null === bubbleEvent) return;
-            checkForFlair(bubbleEvent.innerText.split('\n')[0].trim(), bubbleEvent);
+            let bgimg = document.createElement('div');
+            bgimg.id = 'bubble-bgimg';
+            bubbleEvent.insertBefore(bgimg, bubbleEvent.firstChild);
+            checkForFlair(bubbleEvent.innerText.split('\n')[0].trim(), bgimg);
         }, 1);
     }
 
