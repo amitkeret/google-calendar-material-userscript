@@ -3,7 +3,7 @@
   "calendarFlairData": {
     "genericnewyear":   ["New Year", "new year's", "new years"],
     "babyshower":       ["babyshower", "maternity", "baby shower"],
-    "running":          ["jog", "jogging", "running", "jogs", "Track and field", "track & field", "sprinting"],
+    "running":          ["jog", "jogging", "run", "running", "jogs", "Track and field", "track & field", "sprinting"],
     "bookclub":         ["book club", "reading"],
     "thanksgiving":     ["thanksgiving"],
     "datenight":        ["date night", "datenight", "candlelit dinner", "candlelight dinner", "candle lit dinner", "candle light dinner", "romantic dinner"],
