@@ -97,6 +97,7 @@
     "carmaintenance":   ["car repair", "auto repair", "car maintenance", "auto maintenance", "car mechanic", "auto mechanic", "tire replacement", "tire change", "tyre replacement", "tyre change"],
     "fieldhockey":      ["field hockey"],
     "billiard":         ["billiard"],
+    "birthday":         ["birthday", "birth day", "bday", "b-day"],
     "smart_flight":     ["flight", "plane", "air travel", "air trip"],
     "smart_hotel":      ["hotel", "motel", "lodging"],
     "smart_ticket":     ["ticket", "coupon"],
