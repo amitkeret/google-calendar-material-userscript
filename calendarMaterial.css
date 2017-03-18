@@ -30,6 +30,7 @@
   background: transparent;
 }
 .lv-row .lv-zippy,
+.lv-row .lv-zippy-exp,
 .lv-row .lv-time {
   display: none;
 }
@@ -48,6 +49,10 @@
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-radius: 3px;
+}
+.lv-row .reminder + .lv-event-title-line {
+  margin-bottom: 5px;
+  margin-left: 34px;
 }
 .lv-row .lv-event-title-line.flair {
   min-height: 100px;
