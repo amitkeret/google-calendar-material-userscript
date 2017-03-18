@@ -27,7 +27,7 @@
     }
 
     function applyBg(element, background) {
-        element.style.backgroundImage = background;
+        element.style.backgroundImage = 'url("' + background + '")';
         element.style.backgroundColor = '#CCC';
         element.style.backgroundBlendMode = 'multiply';
         element.classList.add('flair');
@@ -35,9 +35,10 @@
     }
 
     function getBgURL(type, param) {
-        let baseImgURL = 'url(' + baseURL + 'images/';
-        if ('flair' === type) return baseImgURL + 'flairs/img_' + param + '.jpg)';
-        else return baseImgURL + 'months/' + param + '.jpg)';
+        let baseImgURL = baseURL + 'images/';
+        if ('flair' === type) baseImgURL += 'flairs/img_' + param;
+        else baseImgURL += 'months/' + param;
+        return baseImgURL + '.jpg';
     }
 
     function checkForFlair(text, element) {
@@ -55,7 +56,7 @@
         let month = new Date(document.querySelector('.date-top').innerText.split('–')[0].trim());
         if (undefined === month) month = 0;
         else month = month.getMonth();
-        document.getElementById('vr-nav').style.backgroundImage = getBgURL('month', month);
+        document.getElementById('vr-nav').style.backgroundImage = 'url("' + getBgURL('month', month) + '")';
     }
 
     function agendaView() {
