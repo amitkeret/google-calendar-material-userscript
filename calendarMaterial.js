@@ -43,10 +43,20 @@
 
     function checkForFlair(text, element) {
         let flair = false,
-            compareFunction = function(el) { return text.toLowerCase().indexOf(el) !== -1; };
-        for (var eventFlairItem in calendarFlairData) {
-            if (!flair && calendarFlairData[eventFlairItem].filter(compareFunction).length) {
+            exactFunction = function(el) { return text.toLowerCase() == el; },
+            fuzzyFunction = function(el) { return text.toLowerCase().indexOf(el) !== -1; };
+        // try an exact match
+        for (let eventFlairItem in calendarFlairData) {
+            if (!flair && calendarFlairData[eventFlairItem].filter(exactFunction).length) {
                 flair = eventFlairItem;
+            }
+        }
+        if (false === flair) {
+            // try a "fuzzy" match
+            for (let eventFlairItem in calendarFlairData) {
+                if (!flair && calendarFlairData[eventFlairItem].filter(fuzzyFunction).length) {
+                    flair = eventFlairItem;
+                }
             }
         }
         if (false !== flair) applyBg(element, getBgURL('flair', flair));
