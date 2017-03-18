@@ -103,6 +103,6 @@
     "smart_ticket":     ["ticket", "coupon"],
     "goal_hobby":       ["hobby", "hobbies", "fishing", "garden", "photography", "origami"],
     "goal_chores":      ["chore", "chores"],
-    "goal_meal":        ["eat with family", "breakfast with family", "lunch with family", "dinner with family", "meal with family", "eat with friends", "breakfast with friends", "lunch with friends", "dinner with friends", "meal with friends"]
+    "goal_meal":        ["eat with family", "breakfast with family", "brunch with family", "lunch with family", "dinner with family", "meal with family", "eat with friends", "breakfast with friends", "brunch with friends", "lunch with friends", "dinner with friends", "meal with friends"]
   }
 }
