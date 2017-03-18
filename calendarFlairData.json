@@ -3,7 +3,6 @@
   "calendarFlairData": {
     "genericnewyear":   ["new year", "new year's", "new years"],
     "babyshower":       ["babyshower", "maternity", "baby shower"],
-    "breakfast":        ["breakfast", "breakfasts", "brunch", "brunches"],
     "running":          ["jog", "jogging", "run", "running", "jogs", "track and field", "track & field", "sprinting"],
     "bookclub":         ["book club", "reading"],
     "thanksgiving":     ["thanksgiving"],
@@ -52,6 +51,7 @@
     "triathlon":        ["triathlon"],
     "islamicnewyear":   ["islamic new year", "hijri new year", "parsi new year"],
     "pride":            ["dyke march", "christopher street day", "gay parade", "gay pride", "gayglers", "gaygler", "lesbian march", "lesbian parade", "lesbian pride", "euro pride", "europride", "world pride", "worldpride", "gay & lesbian", "gay lesbian", "gay and lesbian"],
+    "breakfast":        ["breakfast", "breakfasts", "brunch", "brunches"],
     "haircut":          ["haircut", "hairdresser", "hair"],
     "lunch":            ["lunch", "lunches", "luncheon"],
     "read":             ["reading", "newspaper", "ebook"],
