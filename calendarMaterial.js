@@ -87,7 +87,9 @@
             var bgimg = document.createElement('div');
             bgimg.id = 'ep-bgimg';
             event.appendChild(bgimg);
-            checkForFlair(document.querySelector('.ep-title input').value, bgimg);
+            let epTitle = document.querySelector('.ep-title');
+            if (epTitle.querySelectorAll('input').length) checkForFlair(epTitle.querySelector('input').value, bgimg);
+            else checkForFlair(epTitle.innerText, bgimg);
         }
     }
 
