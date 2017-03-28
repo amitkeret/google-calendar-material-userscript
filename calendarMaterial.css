@@ -1,3 +1,7 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 #mainnav {
   height: 100px !important;
 }
@@ -84,6 +88,9 @@
   width: 396px;
   height: 140px;
   border: 2px solid white;
+}
+.bubblemain.flair #bubble-bgimg.fadein {
+  animation: fadein 2s;
 }
 .bubblemain.flair #bubble-bgimg:before {
   content: " ";
