@@ -187,6 +187,7 @@
         }
 
         globalChanges();
+        gridMutationFunc();
 
         var grid = document.getElementById('gridcontainer'),
             cover = document.getElementById('coverinner'),
