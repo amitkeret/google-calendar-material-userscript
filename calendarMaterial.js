@@ -14,11 +14,12 @@
 (function() {
     'use strict';
 
+    GM_addStyle(GM_getResourceText('calendarCSS'));
+
     var calendarFlair = unsafeWindow.calendarFlair = function() {
 
         const baseURL = 'https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/master/';
 
-        GM_addStyle(GM_getResourceText('calendarCSS'));
         const calendarFlairData = JSON.parse(GM_getResourceText('calendarFlairData')).calendarFlairData;
 
         const GMaps = {
