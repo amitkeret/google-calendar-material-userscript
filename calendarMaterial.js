@@ -173,17 +173,15 @@
         }
 
         function clickListener() {
-            setTimeout(function() {
-                var bubbleEvent = document.querySelector('.bubblemain');
-                if (null === bubbleEvent) return;
-                let bgimg = document.createElement('div');
-                bgimg.id = 'bubble-bgimg';
-                bubbleEvent.insertBefore(bgimg, bubbleEvent.firstChild);
-                let addressLink = bubbleEvent.querySelector('a.neb-map-link');
-                // .innerText include "map" at the end of the string, have to slice() it out...
-                if (addressLink) checkForAddress(addressLink.parentNode.innerText.split('').slice(0, -3).join(''), bgimg);
-                checkForFlair(bubbleEvent.innerText.split('\n')[0].trim(), bgimg);
-            }, 1);
+            var bubbleEvent = document.querySelector('.bubblemain');
+            if (null === bubbleEvent) return;
+            let bgimg = document.createElement('div');
+            bgimg.id = 'bubble-bgimg';
+            bubbleEvent.insertBefore(bgimg, bubbleEvent.firstChild);
+            let addressLink = bubbleEvent.querySelector('a.neb-map-link');
+            // .innerText include "map" at the end of the string, have to slice() it out...
+            if (addressLink) checkForAddress(addressLink.parentNode.innerText.split('').slice(0, -3).join(''), bgimg);
+            checkForFlair(bubbleEvent.innerText.split('\n')[0].trim(), bgimg);
         }
 
         globalChanges();
@@ -196,8 +194,7 @@
             config = { attributes: true, childList: true, characterData: true };
         observer1.observe(grid, config);
         observer2.observe(cover, config);
-
-        grid.addEventListener('click', clickListener);
+        grid.addEventListener('click', function() { setTimeout(clickListener, 1); } );
 
     };
 
