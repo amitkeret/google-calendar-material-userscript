@@ -22,12 +22,15 @@
         const calendarFlairData = JSON.parse(GM_getResourceText('calendarFlairData')).calendarFlairData;
 
         const GMaps = {
-            'dimentions': { 'width': 2002, 'height': 696 },
-            'geocoder':   new google.maps.Geocoder(),
-            'places':     new google.maps.places.PlacesService(document.createElement('div')) // DOM elemenet param required
+            dimentions: {
+                width: 2002,
+                height: 696
+            },
+            geocoder:   new google.maps.Geocoder(),
+            places:     new google.maps.places.PlacesService(document.createElement('div')) // DOM elemenet param required
         };
 
-        function globalchanges() {
+        function globalChanges() {
             let goog = document.querySelector('.gb_3b .gb_5b'),
                 logo = goog.cloneNode(true);
             logo.id = 'app-logo';
@@ -183,15 +186,13 @@
             }, 1);
         }
 
-        globalchanges();
+        globalChanges();
 
-        var grid = document.getElementById('gridcontainer');
-        var cover = document.getElementById('coverinner');
-
-        var observer1 = new MutationObserver(gridMutationFunc);
-        var observer2 = new MutationObserver(coverInnerMutationFunc);
-        var config = { attributes: true, childList: true, characterData: true };
-
+        var grid = document.getElementById('gridcontainer'),
+            cover = document.getElementById('coverinner'),
+            observer1 = new MutationObserver(gridMutationFunc),
+            observer2 = new MutationObserver(coverInnerMutationFunc),
+            config = { attributes: true, childList: true, characterData: true };
         observer1.observe(grid, config);
         observer2.observe(cover, config);
 
