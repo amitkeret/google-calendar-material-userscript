@@ -16,10 +16,12 @@
   display: inline-block;
 }
 #app-logo {
-  background-position-y: -2719px;
   width: 34px;
-  background-size: 60px 1500px;
+  height: 34px;
   margin-left: 5px;
+  background-image: url("https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/master/images/icon.png");
+  background-position: center center;
+  background-size: cover;
 }
 .ep.flair .ep-ea {
   border-bottom: none;
