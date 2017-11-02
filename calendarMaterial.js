@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Google calendar Material design
-// @version      0.3.1
+// @version      0.4.0
 // @description
 // @author       amitkeret
 // @match        https://calendar.google.com/calendar/*
-// @updateURL    https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/master/calendarMaterial.js
+// @updateURL    https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/native-material/calendarMaterial.js
 // @require      https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCzZllDMWGt8Jop33POXBZ4Z-CH3sBdxUQ
 // @resource     calendarCSS       https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/master/calendarMaterial.css
 // @grant        GM_getResourceText
