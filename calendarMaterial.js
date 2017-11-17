@@ -167,10 +167,11 @@
      * Apply global grid background according to calendar month
      */
     function changeGlobalBg() {
-        let month = new Date(document.querySelector('.date-top').innerText.split('–')[0].trim());
+        let dateRange = document.querySelector('.BXL82c .rSoRzd').innerText.split(' ');
+        let month = new Date(dateRange[0].trim() + ' ' + dateRange[dateRange.length-1].trim());
         if (undefined === month) month = 0;
         else month = month.getMonth();
-        document.getElementById('vr-nav').style.backgroundImage = 'url("' + getBgURL('month', month) + '")';
+        applyBg(document.querySelector('.hEtGGf.HDIIVe'), getBgURL('month', month));
     }
 
     /**
@@ -243,6 +244,7 @@
     observer1.observe(grid, config);
     observer2.observe(cover, config);
 */
+    var observer = new MutationObserver(gridMutationFunc).observe(document.body, { attributes: true, childList: true, characterData: true });
     document.body.addEventListener('click', function() { setTimeout(clickListener, 1); } );
 
 })(google.maps);
