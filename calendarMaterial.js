@@ -245,6 +245,6 @@
     observer2.observe(cover, config);
 */
     var observer = new MutationObserver(gridMutationFunc).observe(document.body, { attributes: true, childList: true, characterData: true });
-    document.body.addEventListener('click', function() { setTimeout(clickListener, 1); } );
+    document.body.addEventListener('click', function() { setTimeout(clickListener, 300); } );
 
 })(google.maps);
