@@ -3,6 +3,7 @@
 // @version      0.4.2
 // @description
 // @author       amitkeret
+// @namespace    http://www.github.com/amitkeret
 // @match        https://calendar.google.com/calendar/*
 // @updateURL    https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/native-material/calendarMaterial.js
 // @require      https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCzZllDMWGt8Jop33POXBZ4Z-CH3sBdxUQ
