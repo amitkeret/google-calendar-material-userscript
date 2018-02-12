@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Google calendar Material design
-// @version      0.4.2
+// @version      0.5.0
 // @description
 // @author       amitkeret
 // @namespace    http://www.github.com/amitkeret
