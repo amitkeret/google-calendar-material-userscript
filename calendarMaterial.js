@@ -6,15 +6,19 @@
 // @namespace    http://www.github.com/amitkeret
 // @match        https://calendar.google.com/calendar/*
 // @updateURL    https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/native-material/calendarMaterial.js
-// @require      https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCzZllDMWGt8Jop33POXBZ4Z-CH3sBdxUQ
 // @resource     calendarCSS       https://raw.githubusercontent.com/amitkeret/google-calendar-material-userscript/master/calendarMaterial.css
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
 
-(function(gm) {
+var gcmdus = function() {
     'use strict';
 
+    if (undefined === unsafeWindow.google || undefined === unsafeWindow.google.maps) {
+      console.log('Google Maps service not found!');
+      return;
+    }
+    let gm = unsafeWindow.google.maps;
     GM_addStyle(GM_getResourceText('calendarCSS'));
 
     /**
@@ -247,4 +251,16 @@
     var observer = new MutationObserver(gridMutationFunc).observe(document.body, { attributes: true, childList: true, characterData: true });
     document.body.addEventListener('click', function() { setTimeout(clickListener, 300); } );
 
-})(google.maps);
+};
+
+var addScript = function(src, attr, callback) {
+  let s = document.createElement('script');
+  s.src = src;
+  for (var i in attr) s[i] = attr[i];
+  if (typeof(callback) == 'function') {
+    s.addEventListener('load', callback);
+  }
+  document.body.appendChild(s);
+}
+let AppKey = 'AIzaSyCzZllDMWGt8Jop33POXBZ4Z-CH3sBdxUQ';
+addScript('https://maps.googleapis.com/maps/api/js?libraries=places&key=' + AppKey + '&ts=' + Date.now(), {}, gcmdus);
