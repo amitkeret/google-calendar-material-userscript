@@ -24,7 +24,6 @@
     /**
      * Expose to global window for subsequent Google services to load properly
      */
-    unsafeWindow.google = { maps: gm };
     let GMaps = {
         /**
          * Globaly-defined dimentions for photos/maps
